@@ -28,7 +28,7 @@ size_t write_callback(void *contents, size_t size, size_t nmemb, void *userp)
 
 char *gettime(void)
 {
-    char *result = malloc(16);
+    char *result = malloc(32);
     if (!result) return NULL;
 
     time_t now = time(NULL);
