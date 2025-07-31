@@ -45,12 +45,12 @@ int main(int argc, char *argv[])
            cJSON_IsString(name) && cJSON_IsNumber(temp) && cJSON_IsString(description)
         ) {
             printf("⠀          ⣀⠴⠢⠤⣀            ⠀& WeatherWave &\n");
-            printf("       ⡔⣝⢏⠁⠀⠀⠀⢀⣉⣀⣀⡀          ---------------\n");
-            printf("⠀⠀⢀⠤⢉⡩⠟⣓⡿⠁⠀⠀⡖⠁⠀⠀⠀⠀⠀⠉⠳⣄⠀⠀⠀⠀⠀⠀⠀location . : %s / %s\n", name->valuestring, country->valuestring);
-            printf("⡠⣒⢯⢕⣫⡯⠗⠉⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⡗⡆⠀⠀⠀⠀temperature: %1.f°C\n", temp->valuedouble - 273.15);
-            printf("⠉⡜⢛⣿⡇⡏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⡄⠀⠀status . . : %s\n", weatherMain->valuestring);
-            printf("⠀⠈⠉⠉⠁⠉⠛⠛⠉⠉⠉⠉⠁⠉⠁⠁⠁⠉⠉⠉⠒⠉⠁⠉⠀⠀⠀⠀⠀description: %s\n", description->valuestring);
-            printf("                            ⠀last_uptade: %s\n", gettime());
+            printf("       ⡔⣝⢏⠁⠀⠀⢀⣤⣿⣤⣀⣀⡀         ---------------\n");
+            printf("⠀⠀⢀⠤⢉⡩⠟⣓⡿⠁⠀⠀⡖⠁⠀⠀⠀⠀⠀⠉⠳⣄⡀⠀⠀⠀⠀⠀⠀location . : %s / %s\n", name->valuestring, country->valuestring);
+            printf("⡠⣒⢯⢕⣫⡯⠗⠉⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⣦⡀⠀⠀⠀⠀temperature: %1.f°C\n", temp->valuedouble - 273.15);
+            printf("⠉⡜⢛⣿⣿⡏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠙⣿⡄⠀⠀status . . : %s\n", weatherMain->valuestring);
+            printf("  ⢻⣿⣿⣇⣀                ⡀⣀⣿⡿  description: %s\n", description->valuestring);
+            printf("⠀  ⠉⠉⠁⠉⠛⠛⠉⠉⠉⠉⠁⠉⠁⠁⠁⠉⠉⠉⠒⠉⠁⠉⠀⠀⠀⠀last_uptade: %s\n", gettime());
         } else printf("Unable to retrieve data\n");
 
         cJSON_Delete(json);
