@@ -1,5 +1,5 @@
 ## How to Use the App?
-1. Clone the repository: ``` git clone https://github.com/wrouruy/WeatherWave.git && cd WeatherWave```
+1. Clone the repository: ``` git clone https://github.com/wrouruy/WeatherWave.git && cd WeatherWave ```
 2. Install libraries:
 ```
 apt     : sudo apt install libcurl4-openssl-dev libcjson-dev
