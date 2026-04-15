@@ -3,7 +3,7 @@
 2. Install libraries:
 ```
 apt     : sudo apt install libcurl4-openssl-dev libcjson-dev
-packman : sudo pacman -S curl cjson
+pacman : sudo pacman -S curl cjson
 dnf     : sudo dnf install libcurl-devel cjson-devel
 brew    : brew install curl
 ```
