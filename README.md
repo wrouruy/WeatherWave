@@ -9,5 +9,4 @@ brew    : brew install curl
 ```
 3. Compile the code: ``` clang -o WeatherWave main.c -lcurl -lcjson ```
 4. Run the compiled code: ``` ./WeatherWave "your city" ```
-
-Thank you for reading☺️!
+   
